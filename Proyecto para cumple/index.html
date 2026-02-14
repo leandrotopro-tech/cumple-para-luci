@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Ti Mi Niña especial 💖</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="modo1">
+
+<audio autoplay loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<canvas id="efectos"></canvas>
+
+<div class="contenedor fade">
+
+<h1 id="titulo"></h1>
+<p id="mensaje"></p>
+
+<input type="file" id="subirImagen" hidden>
+<button id="botonImagen" hidden>📸 Nuestras Fotos O Tus Fotos</button>
+<img id="previewImagen">
+
+<!-- Carta -->
+<div id="carta" hidden>
+<h2>💌 Para ti mi Niña</h2>
+<p> Hoy no vengo a hablar de cosas cursi, hoy vengo a hablar de ti, de lo especial que eres, ya que como siempre te repito eres una chica que nunca se rinde, que lucha por aquello sueña, anhela y desea, y eso te vuelve en la chica increible que conozco, en esa chica a quien amo, es por eso que hoy en tu día especial, quiero felicitarte por todo aquello que lograste y pudiste superar, porque se que a largo plazo vas a poder con más 💖</p>
+</div>
+
+<!-- Juego -->
+<div id="juego" hidden>
+<h2>💖 Atrapa los corazones</h2>
+<p>Puntos: <span id="puntos">0</span></p>
+<div id="areaJuego"></div>
+</div>
+
+<!-- Mensaje secreto -->
+<div id="secreto" hidden>
+<input type="password" id="clave" placeholder="Contraseña 💕">
+<button onclick="verSecreto()">¿Qué dirá?</button>
+<p id="mensajeSecreto"></p>
+</div>
+
+</div>
+
+<button id="cambiarFormato">Avanzamos? 💕</button>
+
+<script src="script.js"></script>
+</body>
+</html>
